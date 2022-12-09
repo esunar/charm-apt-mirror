@@ -1,7 +1,9 @@
 name: Test suite
 
 on:
-  workflow_dispatch:
+  pull_request:
+    types: [ opened, synchronize, reopened ]
+    branches: [ main ]
   pull_request_review:
     types: [ submitted ]
 
