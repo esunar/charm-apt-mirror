@@ -14,9 +14,6 @@ jobs:
       matrix:
         series: ["bionic", "focal", "jammy"]
     timeout-minutes: 60
-    if: >-
-      github.event.review.state == 'approved'
-      || github.event.review.body == 'recheck'
     steps:
       - name: Check out code
         uses: actions/checkout@v3
