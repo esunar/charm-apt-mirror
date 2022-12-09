@@ -3,7 +3,7 @@ name: Functinal suite
 on:
   pull_request:
     types: [ opened, synchronize, reopened ]
-    branches: [ main ]
+    branches: [ main, functional-workflows ]
 
 jobs:
   func:
