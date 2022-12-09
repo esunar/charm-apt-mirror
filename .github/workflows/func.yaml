@@ -1,11 +1,9 @@
-name: Test suite
+name: Functinal suite
 
 on:
   pull_request:
     types: [ opened, synchronize, reopened ]
     branches: [ main ]
-  pull_request_review:
-    types: [ submitted ]
 
 jobs:
   func:
